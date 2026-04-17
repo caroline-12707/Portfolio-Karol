@@ -1,0 +1,76 @@
+/* Layout Semântico e Moderno */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Grid para Responsividade */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-projeto {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-top: 5px solid #27ae60;
+}
+
+.card-projeto h3 { margin-top: 0; color: #2c3e50; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 40px;
+}
+/* Efeito para os links do menu */
+nav a:hover {
+  text-decoration: underline;
+  color: #f1c40f; /* Cor amarela ao passar o mouse */
+  transition: 0.3s;
+}
+
+/* Estilização do link dentro do card */
+.card-projeto a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #27ae60; /* Verde sustentável */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card-projeto a:hover {
+  text-decoration: underline;
+}
